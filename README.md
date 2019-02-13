@@ -9,10 +9,12 @@ Class   : Human-Computer Interaction A
 # Assignment 0
 
 ## Table of Contents
-* [nginx's Website](#nginx%27s%20Website)
-    * [What I considered bad...](#What%20I%20considered%20bad...)
-    * [Suggestions](#Suggestions)
-* [Windows Dark Mode](#Windows%20Dark%20Mode)
+* [nginx's Website](#nginxs-website)
+    * [What I considered bad...](#what-i-considered-bad)
+    * [Suggestions](#suggestions)
+* [Windows Dark Mode](#windows-dark-mode)
+    * [Why I think this bad...](#why-i-think-this-bad)
+    * [What should Microsoft improve...](#what-should-microsoft-improve)
 
 
 ## nginx's Website
@@ -41,7 +43,9 @@ The position and layout of navbar is a little bit unusual. I spent 5 minutes loo
 
 ### Suggestions
 
-`TODO: complete this`
+* Give overview and illustration about the product and make it as a central of attaction as a home page. Also provide the attractive 'Download' button. It would ease the visitors because most of them just looking the way to download the software.
+* Make the site responsive. You can use the frontend framework like Bootstrap or implement your own if you think that bootstrap is too bloated. At least the mobile users can view the site without panning and zooming through the site.
+* Redesign the navigation sidebar. Maybe put things like "News", "Download", "About" and other vital pages on the navbar on top of page and make it static through scrolling, and the subpages of the current opened pages on the left sidebar.
 
 ## Windows Dark Mode
 
@@ -55,7 +59,7 @@ Windows 10 provides 'Dark Mode' since the latest update. This is one feature tha
 
 ![Inconsistent Implementation 01](img/img04.png)
 
-When I tried this feature, I'm really disappointed with this. Not all Windows built-in app affected by this dark theme implementation. UWP apps like Windows newer Settings, Microsoft Store and Groove Music are affected with Dark Theme. Windows File Explorer also get the dark theme. Legacy Control Panel partially affected with dark theme. Other Windows built-in apps like Microsoft Paint and Windows Task Manager doesn't affected with the dark theme. I feel that Windows 'Dark Mode' is very inconsistent across the apps even though it's between Windows's built-in apps.
+When I tried this feature, I'm really disappointed with this. Not all Windows built-in app affected by this dark theme implementation. UWP apps like Windows newer Settings, Microsoft Store and Groove Music are affected with Dark Theme. Windows File Explorer also get the dark theme. Legacy Control Panel partially affected with dark theme. Other Windows built-in apps like Microsoft Paint and Windows Task Manager doesn't affected with the dark theme. I feel that Windows 'Dark Mode' is very inconsistent across the apps even though it's between Windows's built-in apps. Surprisingly, some user-mod dark theme implementations are batter than windows' one because they also support implementing dark theme to third-party apps.
 
 * **Incompatible Icons**
 
@@ -71,12 +75,13 @@ Surprisingly, not only third party apps who suffers this problem. Windows File E
 
 ![Inconsistent Implementation 02](img/img07.gif)
 
-I don't know why but the implementation of 'Dark Mode' on Windows File Explorer itself feels immature. When I open the special directory like `C:\Windows\Fonts`, the dark theme on Windows File Explorer broke.
+I don't know why but the implementation of 'Dark Mode' on Windows File Explorer itself feels immature. When I open the special directory like `C:\Windows\Fonts`, the dark theme on Windows File Explorer broke. It's sad that this is happened on long term stable channel too (Windows LTSC)
 
 ## What should Microsoft improve...
 
-`TODO: complete this`
+* Complete the implementation of current dark theme for every Windows Built-in applications before adding more features on Windows. 
+* Enforce a standard for icons to support 'Dark Theme' for all application on Windows.
 
 # Third Item
 
-`TODO: complete this`
+`TODO: add this if I still have spare time`
