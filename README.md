@@ -15,7 +15,9 @@ Class   : Human-Computer Interaction A
 * [Windows Dark Mode](#windows-dark-mode)
     * [Why I think this bad...](#why-i-think-this-bad)
     * [What should Microsoft improve...](#what-should-microsoft-improve)
-
+* [GTK+ File Chooser](#gtk-file-chooser)
+    * [How bad is it?](#how-bad-is-it)
+    * [What should GTK developer do?](#what-should-gtk-developer-do)
 
 ## nginx's Website
 
@@ -82,6 +84,30 @@ I don't know why but the implementation of 'Dark Mode' on Windows File Explorer 
 * Complete the implementation of current dark theme for every Windows Built-in applications before adding more features on Windows. 
 * Enforce a standard for icons to support 'Dark Theme' for all application on Windows.
 
-# Third Item
+# GTK+ File Chooser
 
-`TODO: add this if I still have spare time`
+![gtk-file-chooser](img/img08.png)
+
+GTK+ File Chooser is the default file chooser for GTK+ based applications on Linux.
+
+## How bad is it?
+
+* **Awful default settings**
+
+![gtk-file-chooser-awful](img/img09.png)
+
+Personally, I find that GTK+ file chooser has an awful default settings. Mixing between folder and files sometimes infuriating when I need to open a folder that located far below. Showing hidden files by default is awful especially if you're on home directory where a lot of applications store dotfiles there.
+
+* **Some useful option are hidden**
+
+I was really confused when first time using GTK+ file chooser. Some of the file chooser options (like Show Hidden Files) are shown if I right-click a file. Some options only available if I press a keyboard shortcut (like `Ctrl+L` to edit the current address). I find this very confusing especially for the new user.
+
+* **There is no option to change the view**
+
+Yes, you're right. _"List View"_ is the one and only view mode that is available on GTK+ file chooser. There is no other view mode like _"Thumbnail View"_ or _"Icon View"_. It's annoying if we need to deal with pictures or videos (like choosing pictures to upload to web).
+
+## What should GTK developer do?
+
+* Add some important option buttons on the top-right side like enable/disable address bar editing.
+* Implement other _"View Mode"_ like _"Thumbnail View"_. (This issue was already on their bug tracker, but rejected)
+* Listen to your user. Sometimes what user want is different from what developer want. If user requirements aren't fulfilled, user might think to use a similar product (or software in this case) from other developer.
